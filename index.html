@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine's Proposal💖</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 25px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+     align-content: center;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      color: #00d4ff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+      color: #b0e0ff;
+
+    }
+
+    button {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    
+    }
+
+    #yesBtn {
+      background: #00ffff;
+      color: #1e90ff;
+    }
+
+    #noBtn {
+      background: #1e90ff;
+      color: white;
+      position: absolute;
+    }
+
+    .star {
+      font-size: 60px;
+      animation: twinkle 1s infinite;
+    }
+
+    @keyframes twinkle {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <div class="star">💖</div>
+    <h1>Will you be my Valentine???</h1>
+    <p>Just give me a chance and say yes … you can’t imagine the amazing life I can give you! ✨</p>
+    <button id="yesBtn" onclick="goToGift()">Yes 🙂‍↔️</button>
+    <button id="noBtn" onmouseover="moveNo()">No 😢</button>
+  </div>
+
+  <script>
+    function moveNo() {
+      const noBtn = document.getElementById("noBtn");
+      const x = Math.random() * (window.innerWidth - 120);
+      const y = Math.random() * (window.innerHeight - 60);
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    }
+
+    function goToGift() {
+      window.location.href = "page2.html";
+    }
+  </script>
+
+</body>
+
+</html>

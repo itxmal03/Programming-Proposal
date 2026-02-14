@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello from Programming! 💻</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: containerFadeIn 1.5s ease-out forwards;
+    }
+
+
+    @keyframes containerFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      color: #00d4ff;
+    }
+
+    .header p {
+      font-size: 1.3em;
+      color: #b0e0ff;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 5px solid #00d4ff;
+      padding: 30px 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    }
+
+    .section:hover {
+      transform: translateY(0) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 212, 255, 0.4);
+      border: 1px solid #00d4ff;
+
+    }
+
+
+    .section h2 {
+      color: #00ffff;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      color: #c0e8ff;
+      font-size: 1.1em;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 1.2em;
+      color: #80dfff;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2em;
+      }
+
+      .section p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Online Background Music -->
+  <audio autoplay loop>
+    <source src="/assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Hi! I am Programming 💻</h1>
+      <p>Don’t be afraid — I am here to make your life easier & independent and give you freedom form all sorrows!</p>
+    </div>
+
+    <div class="section">
+      <h2>My Myth</h2>
+      <p>Many people think I am boring and feelingless, but that’s not true.They just don't try to understand me.
+        I am friendly and easy if you give me a little chance.</p>
+    </div>
+
+    <div class="section">
+      <h2>How I Help You</h2>
+      <p>I can make your life happier, creative, and full of opportunities.
+        Just a little effort at the start is enough, and you will enjoy the journey.</p>
+    </div>
+
+    <div class="section">
+      <h2>Get Started</h2>
+      <p>Pick a mentor, follow tutorials, or try small projects.
+        Step by step, you will improve and have fun learning.</p>
+    </div>
+
+    <div class="section">
+      <h2>Why You Will Love Me</h2>
+      <p>I make problem-solving exciting and help you create amazing things.
+        You will feel proud and happy when you see what you can build! and also I will adorn your life!</p>
+    </div>
+
+    <div class="footer">
+      <p>I started loving you the moment you stepped into my world. Just waiting for your “yes” to compile our future.
+        Trust me, your future self will thank you. Now,I ask you… will you run this code of love with
+        me? and make your life much more enjoyfull and interesting and take freedom for whole life? Let's start a
+        new journey and make life impactful and easy. I demand only commitment and loyalty and in return I can give you
+        the life of your own imagination. A lot of time has been already wasted , please don't waste more 💻❤️</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
